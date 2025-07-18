@@ -12,7 +12,21 @@
       <h2>Extracurricular Activities</h2>
     </header>
 
-    <main>
+        <div id="activity-list">
+            <div id="activity-toolbar">
+                <label for="category-filter">Category:</label>
+                <select id="category-filter">
+                    <option value="">All</option>
+                </select>
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="name">Name</option>
+                    <option value="date">Date</option>
+                </select>
+                <label for="search-input">Search:</label>
+                <input type="text" id="search-input" placeholder="Search activities...">
+                <button id="filter-btn">Apply</button>
+            </div>
       <section id="activities-container">
         <h3>Available Activities</h3>
         <div id="activities-list">
